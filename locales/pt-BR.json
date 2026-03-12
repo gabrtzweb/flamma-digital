@@ -8,14 +8,19 @@
     },
     "hero": {
         "socialProof": "Junte-se a outros <strong>mais de 91,425 lojistas</strong> que usam a Shopify.",
-        "headline1": "Eleve seu eCommerce",
+        "headline1": "Eleve o seu eCommerce",
         "headline2": "para o próximo level.",
+        "mobileLine1": "Eleve o seu",
+        "mobileLine2": "eCommerce ao",
+        "mobileLine3": "próximo nível.",
         "subtext": "Transforme o seu negócio local em uma verdadeira máquina de vendas e performance, impulsionada pela tecnologia Shopify."
     },
     "feature": {
         "badge": "Recursos disponíveis",
         "headline1": "Venda aqui, ali e em",
         "headline2": "qualquer lugar!",
+        "mobileLine1": "Venda em",
+        "mobileLine2": "qualquer lugar!",
         "subtitle": "Alcance clientes em todos os lugares, vendendo online, em marketplaces, presencialmente, B2B e em qualquer dispositivo.",
         "card1": {
             "imgAlt": "Insights em tempo real",

@@ -79,4 +79,33 @@ document.querySelector('.lang-toggle')?.addEventListener('click', () => {
 	loadLocale(currentLocale === 'pt-BR' ? 'en' : 'pt-BR');
 });
 
+/* =========================================
+   MOBILE MENU
+   ========================================= */
+
+const mobileToggle = document.querySelector('.nav-mobile-toggle');
+const mobileMenu = document.querySelector('.nav-mobile-menu');
+
+function closeMobileMenu() {
+	header.classList.remove('is-mobile-open');
+	mobileToggle?.setAttribute('aria-expanded', 'false');
+	mobileToggle?.setAttribute('aria-label', 'Abrir menu');
+}
+
+mobileToggle?.addEventListener('click', () => {
+	const isOpen = header.classList.toggle('is-mobile-open');
+	mobileToggle.setAttribute('aria-expanded', String(isOpen));
+	mobileToggle.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+});
+
+// Close when a mobile nav link is clicked
+mobileMenu?.querySelectorAll('a').forEach(link => {
+	link.addEventListener('click', closeMobileMenu);
+});
+
+// Close on ESC key
+document.addEventListener('keydown', e => {
+	if (e.key === 'Escape') closeMobileMenu();
+});
+
 loadLocale(currentLocale);

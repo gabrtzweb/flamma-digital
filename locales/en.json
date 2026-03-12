@@ -10,12 +10,17 @@
         "socialProof": "Join over <strong>91,425+ merchants</strong> already using Shopify.",
         "headline1": "Elevate your eCommerce",
         "headline2": "to the next level.",
+        "mobileLine1": "Elevate your",
+        "mobileLine2": "eCommerce to",
+        "mobileLine3": "the next level.",
         "subtext": "Transform your local business into a true sales and performance machine, powered by Shopify technology."
     },
     "feature": {
         "badge": "Available features",
         "headline1": "Sell here, there and",
         "headline2": "anywhere!",
+        "mobileLine1": "Sell",
+        "mobileLine2": "anywhere!",
         "subtitle": "Reach customers everywhere — selling online, on marketplaces, in person, B2B, and on any device.",
         "card1": {
             "imgAlt": "Real-time insights",
