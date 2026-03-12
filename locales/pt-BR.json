@@ -32,5 +32,9 @@
             "title": "Dados realistas",
             "text": "Aproveite a análise para aprimorar os fluxos de trabalho, aumentar o engajamento e tomar decisões."
         }
+    },
+    "footer": {
+        "copyright": "© 2025 Flamma Digital, todos os direitos reservados.",
+        "madeWith": "Desenvolvido com <span class=\"footer-heart\">💗</span>"
     }
 }

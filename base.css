@@ -179,6 +179,7 @@ small, .text-small {
     text-decoration: none;
     flex-shrink: 0;
     transition: color 0.25s ease;
+    margin-left: -8px;
 }
 
 .logo-img {
@@ -621,6 +622,96 @@ small, .text-small {
 }
 
 /* =========================================
+   FOOTER
+   ========================================= */
+
+.site-footer {
+    position: relative;
+    z-index: 2;
+    background-color: var(--bg);
+    padding: 3rem 2rem 3.5rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-divider {
+    height: 2px;
+    width: 100%;
+    background: rgba(8, 10, 15, 0.08);
+    margin-bottom: 3.5rem;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.footer-logo {
+    display: inline-flex;
+    color: var(--fg);
+    text-decoration: none;
+    margin-left: -8px;
+}
+
+.footer-logo-img {
+    display: block;
+    height: 32px;
+    width: 133px;
+    background-color: currentColor;
+    -webkit-mask-image: url(assets/flamma-logo.svg);
+    mask-image: url(assets/flamma-logo.svg);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center left;
+    mask-position: center left;
+}
+
+.footer-social {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.footer-social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(8, 10, 15, 0.5);
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-social-link:hover {
+    color: rgba(8, 10, 15, 0.8);
+    transform: translateY(-1px);
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: rgba(8, 10, 15, 0.65);
+    font-size: var(--fs-small);
+}
+
+.footer-heart {
+    color: var(--primary);
+}
+
+/* =========================================
    RESPONSIVE
    ========================================= */
 
@@ -746,6 +837,30 @@ small, .text-small {
         gap: 1.25rem;
         margin-top: 1rem;
     }
+
+    /* Footer */
+    .site-footer {
+        padding: 2.5rem 1.25rem 2.75rem;
+    }
+
+    .footer-divider {
+        margin-bottom: 2rem;
+    }
+
+    .footer-top {
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-logo-img {
+        width: 133px;
+        height: 32px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.55rem;
+    }
 }
 
 /* ========== Breakpoint ≤ 480px ========== */
@@ -858,5 +973,20 @@ small, .text-small {
 
     .feature-card-text {
         padding: 0.75rem 1.25rem 1.5rem;
+    }
+
+    /* Footer */
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .footer-social {
+        gap: 0.85rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.9rem;
     }
 }
