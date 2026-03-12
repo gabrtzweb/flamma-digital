@@ -1,7 +1,11 @@
 {
+    "meta": {
+        "title": "Flamma Digital | Agência Shopify",
+        "description": "Transforme o seu negócio com soluções Shopify da Flamma Digital: design exclusivo, performance e suporte especializado para e-commerce."
+    },
     "nav": {
         "feature": "Recursos",
-        "solution": "Solução",
+        "solution": "Soluções",
         "portfolio": "Portifólio",
         "faq": "FAQ",
         "cta": "WhatsApp"
