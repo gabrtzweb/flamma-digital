@@ -1,0 +1,31 @@
+{
+    "nav": {
+        "recursos": "Recursos",
+        "porque": "Porque?",
+        "portfolio": "Portifólio",
+        "faq": "FAQ",
+        "cta": "WhatsApp"
+    },
+    "hero": {
+        "socialProof": "Junte-se a outros <strong>mais de 91,425 lojistas</strong> que usam a Shopify.",
+        "headline1": "Eleve seu eCommerce",
+        "headline2": "para o próximo level.",
+        "subtext": "Transforme o seu negócio local em uma verdadeira máquina de vendas e performance, impulsionada pela tecnologia Shopify."
+    },
+    "feature": {
+        "badge": "Recursos disponíveis",
+        "headline1": "Venda aqui, ali e em",
+        "headline2": "qualquer lugar!",
+        "subtitle": "Alcance clientes em todos os lugares, vendendo online, em marketplaces, presencialmente, B2B e em qualquer dispositivo.",
+        "card1": {
+            "imgAlt": "Insights em tempo real",
+            "title": "Insights em tempo real",
+            "text": "Monitore suas campanhas em tempo real para garantir a máxima eficácia e identificar melhorias."
+        },
+        "card2": {
+            "imgAlt": "Dados realistas",
+            "title": "Dados realistas",
+            "text": "Aproveite a análise para aprimorar os fluxos de trabalho, aumentar o engajamento e tomar decisões."
+        }
+    }
+}

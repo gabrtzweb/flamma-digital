@@ -1,0 +1,31 @@
+{
+    "nav": {
+        "recursos": "Features",
+        "porque": "Why us?",
+        "portfolio": "Portfolio",
+        "faq": "FAQ",
+        "cta": "WhatsApp"
+    },
+    "hero": {
+        "socialProof": "Join over <strong>91,425+ merchants</strong> already using Shopify.",
+        "headline1": "Elevate your eCommerce",
+        "headline2": "to the next level.",
+        "subtext": "Transform your local business into a true sales and performance machine, powered by Shopify technology."
+    },
+    "feature": {
+        "badge": "Available features",
+        "headline1": "Sell here, there and",
+        "headline2": "anywhere!",
+        "subtitle": "Reach customers everywhere — selling online, on marketplaces, in person, B2B, and on any device.",
+        "card1": {
+            "imgAlt": "Real-time insights",
+            "title": "Real-time insights",
+            "text": "Monitor your campaigns in real time to maximize effectiveness and identify opportunities for improvement."
+        },
+        "card2": {
+            "imgAlt": "Realistic data",
+            "title": "Realistic data",
+            "text": "Leverage analytics to streamline workflows, boost engagement, and make smarter decisions."
+        }
+    }
+}
