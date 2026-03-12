@@ -148,3 +148,62 @@ document.addEventListener('keydown', e => {
 });
 
 loadLocale(currentLocale);
+
+/* =========================================
+   FAQ ACCORDION — close others on open
+   ========================================= */
+document.querySelectorAll('.faq-item').forEach(item => {
+	item.addEventListener('toggle', () => {
+		if (item.open) {
+			document.querySelectorAll('.faq-item[open]').forEach(other => {
+				if (other !== item) other.removeAttribute('open');
+			});
+		}
+	});
+});
+
+/* =========================================
+   PORTFOLIO CAROUSEL
+   ========================================= */
+(function () {
+	const stage = document.querySelector('.portfolio-stage');
+	if (!stage) return;
+
+	const track = stage.querySelector('.portfolio-track');
+	const cards = stage.querySelectorAll('.portfolio-card');
+	const prevBtn = stage.querySelector('.portfolio-prev');
+	const nextBtn = stage.querySelector('.portfolio-next');
+	const dots = stage.closest('.portfolio')?.querySelectorAll('.portfolio-dot');
+
+	function scrollStep() {
+		const gap = parseFloat(getComputedStyle(track).gap) || 24;
+		return (cards[0]?.offsetWidth || 0) + gap;
+	}
+
+	function updateUI() {
+		const atStart = track.scrollLeft <= 1;
+		const atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 1;
+		if (prevBtn) prevBtn.disabled = atStart;
+		if (nextBtn) nextBtn.disabled = atEnd;
+		if (dots?.length) {
+			const idx = Math.round(track.scrollLeft / scrollStep());
+			dots.forEach((d, i) => d.classList.toggle('is-active', i === idx));
+		}
+	}
+
+	prevBtn?.addEventListener('click', () => {
+		track.scrollBy({ left: -scrollStep(), behavior: 'smooth' });
+	});
+	nextBtn?.addEventListener('click', () => {
+		track.scrollBy({ left: scrollStep(), behavior: 'smooth' });
+	});
+	dots?.forEach((d, i) => {
+		d.addEventListener('click', () => {
+			track.scrollTo({ left: i * scrollStep(), behavior: 'smooth' });
+		});
+	});
+
+	track.addEventListener('scroll', updateUI, { passive: true });
+	window.addEventListener('resize', updateUI);
+	updateUI();
+})();

@@ -1,7 +1,7 @@
 {
     "nav": {
-        "recursos": "Features",
-        "porque": "Why us?",
+        "feature": "Features",
+        "solution": "Solution",
         "portfolio": "Portfolio",
         "faq": "FAQ",
         "cta": "WhatsApp"
@@ -15,12 +15,47 @@
         "mobileLine3": "the next level.",
         "subtext": "Transform your local business into a true sales and performance machine, powered by Shopify technology."
     },
+    "solution": {
+        "badge": "Best solutions",
+        "titleLine1": "Why choose",
+        "titleLine2": "Shopify",
+        "title": "Why choose Shopify?",
+        "text": "We especially recommend it for teams that are not very large and need a practical way to manage all day-to-day eCommerce demands. If you are looking for better workflow efficiency, exclusive design, and easier sales management for your online store, Shopify is an excellent solution.",
+        "cta": "I want to create a Shopify store",
+        "imageAlt": "Shopify solution for your store",
+        "highlights": {
+            "card1": {
+                "title": "Ease of use and rich features",
+                "text": "A user-friendly interface with no technical team required, plus plenty of Shopify App Store apps to customize your store your way."
+            },
+            "card2": {
+                "title": "Security and scalability",
+                "text": "Secure and scalable: with SSL and PCI DSS, Shopify protects your data and grows with your business, from startups to enterprises."
+            },
+            "card3": {
+                "title": "Complete app ecosystem",
+                "text": "Connect your store to social media, sales channels, marketing tools, and even shipping platforms with ease — all in one place."
+            },
+            "card4": {
+                "title": "24/7 support team",
+                "text": "Continuous assistance to keep your store online, with fast and direct account support, no long queues or ticket delays."
+            }
+        }
+    },
     "feature": {
         "badge": "Available features",
         "headline1": "Sell here, there and",
         "headline2": "anywhere!",
         "mobileLine1": "Sell",
         "mobileLine2": "anywhere!",
+        "advantage1": "Essential Apps",
+        "advantage2": "Data Security",
+        "advantage3": "Scalability",
+        "advantage4": "Payment Integration",
+        "advantage5": "Simplified Management",
+        "advantage6": "Marketing Integration",
+        "advantage7": "Mobile-Friendly",
+        "advantage8": "SEO Optimized",
         "subtitle": "Reach customers everywhere — selling online, on marketplaces, in person, B2B, and on any device.",
         "card1": {
             "imgAlt": "Real-time insights",
@@ -31,10 +66,57 @@
             "imgAlt": "Realistic data",
             "title": "Realistic data",
             "text": "Leverage analytics to streamline workflows, boost engagement, and make smarter decisions."
+        },
+        "card3": {
+            "imgAlt": "Publish across multiple channels",
+            "title": "Publish across multiple channels",
+            "text": "Use multichannel integration and show up everywhere your customers browse."
         }
     },
     "footer": {
         "copyright": "© 2025 Flamma Digital. All rights reserved.",
-        "madeWith": "Made with <span class=\"footer-heart\">💗</span>"
+        "madeWith": "Made with <span class=\"footer-heart\">💙</span>"
+    },
+    "ctaBanner": {
+        "text": "Interested and need a personalized, high-quality service?",
+        "cta": "Get in touch"
+    },
+    "portfolio": {
+        "badge": "Store portfolio",
+        "headlineLine1": "Some examples",
+        "headlineLine2": "of Shopify stores!",
+        "subtitle": "Get a stunning store built to sell, fully customized to give you total control.",
+        "visitStore": "Visit store",
+        "comingSoon": "Coming soon",
+        "comingSoonDesc": "New project in progress",
+        "card1": {
+            "desc": "Chairs and electronics"
+        }
+    },
+    "faq": {
+        "badge": "Frequently asked questions",
+        "headlineLine1": "Questions? We have",
+        "headlineLine2": "the answers!",
+        "subtitle": "Find quick answers to the most common questions about our services and processes.",
+        "q1": {
+            "question": "What is Shopify?",
+            "answer": "Shopify is the world's most used e-commerce platform, allowing you to create and manage online stores easily and professionally, with advanced sales, payment, and marketing features built in."
+        },
+        "q2": {
+            "question": "How will I manage my store?",
+            "answer": "After launch, you will have full access to the Shopify admin panel, where you can manage products, orders, customers, and reports intuitively. We also provide training so you feel comfortable with the platform."
+        },
+        "q3": {
+            "question": "Do you offer post-launch support?",
+            "answer": "Yes! We offer post-launch support to ensure your store runs perfectly. Our plans include technical support, updates, and ongoing guidance to resolve any questions you may have."
+        },
+        "q4": {
+            "question": "How long does it take to launch my store?",
+            "answer": "The timeline depends on project complexity, but typically between 2 and 6 weeks. Simpler projects can be delivered faster, while stores with advanced features take a bit longer."
+        },
+        "q5": {
+            "question": "Are your stores mobile responsive?",
+            "answer": "Yes, all stores we develop are fully responsive and mobile-optimized, ensuring an excellent shopping experience on any device."
+        }
     }
 }

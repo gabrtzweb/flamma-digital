@@ -1,7 +1,7 @@
 {
     "nav": {
-        "recursos": "Recursos",
-        "porque": "Porque?",
+        "feature": "Recursos",
+        "solution": "Solução",
         "portfolio": "Portifólio",
         "faq": "FAQ",
         "cta": "WhatsApp"
@@ -15,12 +15,47 @@
         "mobileLine3": "próximo nível.",
         "subtext": "Transforme o seu negócio local em uma verdadeira máquina de vendas e performance, impulsionada pela tecnologia Shopify."
     },
+    "solution": {
+        "badge": "Melhores soluções",
+        "titleLine1": "Porque escolher",
+        "titleLine2": "a Shopify",
+        "title": "Por que escolher a Shopify?",
+        "text": "Recomendamos especialmente para quem não possui uma equipe muito grande para cuidar de todas as demandas ou o tempo necessário para gerenciar as diversas tarefas de uma loja virtual. Se você busca maior praticidade para seu time, um design exclusivo e a facilidade na gestão das vendas do seu e-commerce, a Shopify é uma ótima solução.",
+        "cta": "Quero criar uma loja na Shopify",
+        "imageAlt": "Solução Shopify para a sua loja",
+        "highlights": {
+            "card1": {
+                "title": "Facilidade e diversos recursos",
+                "text": "Interface fácil de usar, sem precisar de equipe técnica, e com diversos apps na Shopify App Store para personalizar sua loja como quiser."
+            },
+            "card2": {
+                "title": "Segurança e escalabilidade",
+                "text": "Segura e escalável: com SSL e PCI DSS, a Shopify protege dados e cresce com seu negócio, de startups a grandes empresas."
+            },
+            "card3": {
+                "title": "Loja de aplicativos completa",
+                "text": "Conecte sua loja a redes sociais, canais de venda, marketing, e até plataformas de frete com facilidade. Tudo em um só lugar."
+            },
+            "card4": {
+                "title": "Equipe de suporte 24/7",
+                "text": "Assistência contínua para manter sua loja online, com suporte de conta rápido e direto, sem filas, espera ou abertura de tickets."
+            }
+        }
+    },
     "feature": {
         "badge": "Recursos disponíveis",
         "headline1": "Venda aqui, ali e em",
         "headline2": "qualquer lugar!",
         "mobileLine1": "Venda em",
         "mobileLine2": "qualquer lugar!",
+        "advantage1": "Apps Essenciais",
+        "advantage2": "Segurança de Dados",
+        "advantage3": "Escalabilidade",
+        "advantage4": "Integração de Pagamentos",
+        "advantage5": "Gestão Simplificada",
+        "advantage6": "Integração com Marketing",
+        "advantage7": "Mobile-Friendly",
+        "advantage8": "SEO Otimizado",
         "subtitle": "Alcance clientes em todos os lugares, vendendo online, em marketplaces, presencialmente, B2B e em qualquer dispositivo.",
         "card1": {
             "imgAlt": "Insights em tempo real",
@@ -31,10 +66,57 @@
             "imgAlt": "Dados realistas",
             "title": "Dados realistas",
             "text": "Aproveite a análise para aprimorar os fluxos de trabalho, aumentar o engajamento e tomar decisões."
+        },
+        "card3": {
+            "imgAlt": "Publique em vários canais",
+            "title": "Publique em vários canais",
+            "text": "Use a integração multicanal e apareça em todos os lugares em que os clientes navegam."
         }
     },
     "footer": {
         "copyright": "© 2025 Flamma Digital, todos os direitos reservados.",
-        "madeWith": "Desenvolvido com <span class=\"footer-heart\">💗</span>"
+        "madeWith": "Desenvolvido com <span class=\"footer-heart\">💙</span>"
+    },
+    "ctaBanner": {
+        "text": "Ficou interessado e precisa de um serviço personalizado e de qualidade?",
+        "cta": "Entrar em contato"
+    },
+    "portfolio": {
+        "badge": "Portfólio de lojas",
+        "headlineLine1": "Alguns exemplos",
+        "headlineLine2": "de lojas Shopify!",
+        "subtitle": "Obtenha uma loja deslumbrante desenvolvida para vender e totalmente personalizado para ter controle total.",
+        "visitStore": "Ver loja",
+        "comingSoon": "Em breve",
+        "comingSoonDesc": "Novo projeto em andamento",
+        "card1": {
+            "desc": "Cadeiras e eletrônicos"
+        }
+    },
+    "faq": {
+        "badge": "Perguntas frequentes",
+        "headlineLine1": "Perguntas? Temos",
+        "headlineLine2": "as respostas!",
+        "subtitle": "Encontre respostas rápidas para as perguntas mais comuns sobre nossos serviços e processos.",
+        "q1": {
+            "question": "O que é Shopify?",
+            "answer": "A Shopify é a plataforma de e-commerce mais utilizada no mundo, que permite criar e gerenciar lojas virtuais de forma simples e profissional, com recursos avançados de vendas, pagamentos e marketing integrados."
+        },
+        "q2": {
+            "question": "Como vou continuar a gerenciar minha loja?",
+            "answer": "Após o lançamento, você terá acesso completo ao painel administrativo da Shopify, onde poderá gerenciar produtos, pedidos, clientes e relatórios de forma intuitiva. Também oferecemos treinamento para que você se sinta confortável com a plataforma."
+        },
+        "q3": {
+            "question": "Nós oferecemos suporte após o lançamento?",
+            "answer": "Sim! Oferecemos suporte pós-lançamento para garantir que sua loja funcione perfeitamente. Nossos planos incluem suporte técnico, atualizações e acompanhamento contínuo para resolver qualquer dúvida."
+        },
+        "q4": {
+            "question": "Quanto tempo leva para ter minha loja no ar?",
+            "answer": "O prazo varia conforme a complexidade do projeto, mas normalmente entre 2 e 6 semanas. Projetos mais simples podem ser entregues mais rápido, enquanto lojas com recursos avançados levam um pouco mais de tempo."
+        },
+        "q5": {
+            "question": "Nossas lojas são responsivas a dispositivos móveis?",
+            "answer": "Sim, todas as lojas que desenvolvemos são totalmente responsivas e otimizadas para mobile, garantindo uma excelente experiência de compra em qualquer dispositivo."
+        }
     }
 }
