@@ -222,6 +222,12 @@ small, .text-small {
     opacity: 1;
 }
 
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .nav-cta {
     display: inline-flex;
     align-items: center;
@@ -357,6 +363,14 @@ small, .text-small {
     font-weight: 700;
 }
 
+.social-proof__count {
+    display: inline-block;
+    min-width: 6ch;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+}
+
 /* Headline */
 .hero-headline {
     font-size: var(--fs-hero-headline);
@@ -401,7 +415,7 @@ small, .text-small {
     display: inline-block;
     height: 0.82em;
     width: 0.82em; /* flamma-icon.svg is square (810×810) */
-    background-color: currentColor; /* inherits white from .hero-headline */
+    background-color: var(--primary);
     -webkit-mask-image: url(assets/flamma-icon.svg);
     mask-image: url(assets/flamma-icon.svg);
     -webkit-mask-size: contain;
@@ -867,7 +881,7 @@ small, .text-small {
 @media (max-width: 480px) {
     /* Header: hide WhatsApp label, keep icon-only button */
     .nav-cta span[data-i18n] {
-        display: none;
+        font-size: var(--fs-small);
     }
 
     .nav-cta {
