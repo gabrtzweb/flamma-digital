@@ -7,7 +7,7 @@
         "cta": "WhatsApp"
     },
     "hero": {
-        "socialProof": "Join over <strong>91,425+ merchants</strong> already using Shopify.",
+        "socialProof": "Join over <strong><span class=\"social-proof__count\" data-count-start=\"72894\" data-count-end=\"91425\">91,425</span>+ merchants</strong> already using Shopify.",
         "headline1": "Elevate your eCommerce",
         "headline2": "to the next level.",
         "mobileLine1": "Elevate your",

@@ -23,6 +23,7 @@ syncHeaderTheme();
 
 let currentLocale = localStorage.getItem('locale') || 'pt-BR';
 let translations = {};
+let socialProofRafId;
 
 function getVal(obj, path) {
 	return path.split('.').reduce((acc, key) => acc?.[key], obj);
@@ -59,6 +60,43 @@ function updateLangToggle() {
 	}
 }
 
+function formatCount(value) {
+	const locale = currentLocale === 'pt-BR' ? 'pt-BR' : 'en-US';
+	return new Intl.NumberFormat(locale).format(value);
+}
+
+function animateSocialProofCount() {
+	const countEl = document.querySelector('.social-proof__count');
+	if (!countEl) return;
+
+	const start = Number(countEl.dataset.countStart) || 72894;
+	const end = Number(countEl.dataset.countEnd) || 91425;
+	const duration = 1600;
+
+	if (socialProofRafId) cancelAnimationFrame(socialProofRafId);
+
+	countEl.textContent = formatCount(start);
+	const animationStart = performance.now();
+
+	const tick = now => {
+		const elapsed = now - animationStart;
+		const progress = Math.min(elapsed / duration, 1);
+		const eased = 1 - Math.pow(1 - progress, 3);
+		const current = Math.round(start + (end - start) * eased);
+
+		countEl.textContent = formatCount(current);
+
+		if (progress < 1) {
+			socialProofRafId = requestAnimationFrame(tick);
+		} else {
+			socialProofRafId = undefined;
+			countEl.textContent = formatCount(end);
+		}
+	};
+
+	socialProofRafId = requestAnimationFrame(tick);
+}
+
 async function loadLocale(locale) {
 	try {
 		const res = await fetch(`locales/${locale}.json`);
@@ -72,6 +110,7 @@ async function loadLocale(locale) {
 	localStorage.setItem('locale', locale);
 	document.documentElement.lang = locale;
 	applyTranslations();
+	animateSocialProofCount();
 	updateLangToggle();
 }
 
