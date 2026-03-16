@@ -10,14 +10,13 @@ Through the site, potential clients can learn more about our work, explore our s
 
 ## Built With
 
-* HTML5
-* CSS3
-* Vanilla JavaScript
+* Astro (Framework)
+* HTML/CSS/JavaScript
 * Hosted on Netlify
 
 ## Live Site
 
-You can view the live website here:  
+Check out the live website here:
 https://flamma.digital/
 
 ## Contact

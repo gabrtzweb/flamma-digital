@@ -1,0 +1,90 @@
+---
+import { Image } from 'astro:assets';
+import mundomoob from '../assets/mundomoob.png';
+---
+
+<section class="portfolio" id="portfolio">
+        <div class="portfolio-header">
+            <span class="feature-badge portfolio-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M216,40H72A16,16,0,0,0,56,56V72H40A16,16,0,0,0,24,88V200a16,16,0,0,0,16,16H184a16,16,0,0,0,16-16V184h16a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM184,88v16H40V88Zm32,80H200V88a16,16,0,0,0-16-16H72V56H216Z"></path></svg>
+                <span data-i18n="portfolio.badge">Portfólio de lojas</span>
+            </span>
+
+            <h2 class="portfolio-headline">
+                <span data-i18n="portfolio.headlineLine1">Alguns exemplos</span>
+                <span class="portfolio-headline-line2">
+                    <span data-i18n="portfolio.headlineLine2">de lojas Shopify!</span>
+                    <svg class="portfolio-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M160,56H64A16,16,0,0,0,48,72V224a8,8,0,0,0,12.65,6.51L112,193.83l51.36,36.68A8,8,0,0,0,176,224V72A16,16,0,0,0,160,56Z"></path><path d="M192,24H88a8,8,0,0,0,0,16H192V192a8,8,0,0,0,16,0V40A16,16,0,0,0,192,24Z"></path></svg>
+                </span>
+            </h2>
+
+            <p class="portfolio-subtitle" data-i18n="portfolio.subtitle">Obtenha uma loja deslumbrante desenvolvida para vender e totalmente personalizado para ter controle total.</p>
+        </div>
+
+        <div class="portfolio-stage">
+            <button class="portfolio-nav portfolio-prev" aria-label="Projeto anterior" disabled>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 256 256"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path></svg>
+            </button>
+
+            <div class="portfolio-carousel">
+                <div class="portfolio-track">
+
+                    <article class="portfolio-card">
+                        <div class="portfolio-card-browser">
+                            <div class="portfolio-card-bar">
+                                <span class="portfolio-card-dot portfolio-card-dot--red"></span>
+                                <span class="portfolio-card-dot portfolio-card-dot--yellow"></span>
+                                <span class="portfolio-card-dot portfolio-card-dot--green"></span>
+                                <div class="portfolio-card-urlbar">mundomoob.com.br</div>
+                            </div>
+                            <div class="portfolio-card-screen">
+                                <Image src={mundomoob} alt="Mundo Moob — Loja Shopify" />
+                            </div>
+                        </div>
+                        <footer class="portfolio-card-footer">
+                            <div class="portfolio-card-meta">
+                                <h3 class="portfolio-card-name">Mundo Moob</h3>
+                                <p class="portfolio-card-desc" data-i18n="portfolio.card1.desc">Cadeiras e eletrônicos</p>
+                            </div>
+                            <a href="https://www.mundomoob.com.br/" target="_blank" rel="noopener noreferrer" class="portfolio-card-link">
+                                <span data-i18n="portfolio.visitStore">Ver loja</span>
+                            </a>
+                        </footer>
+                    </article>
+
+                    <article class="portfolio-card portfolio-card--soon">
+                        <div class="portfolio-card-browser">
+                            <div class="portfolio-card-bar">
+                                <span class="portfolio-card-dot portfolio-card-dot--red"></span>
+                                <span class="portfolio-card-dot portfolio-card-dot--yellow"></span>
+                                <span class="portfolio-card-dot portfolio-card-dot--green"></span>
+                                <div class="portfolio-card-urlbar" data-i18n="portfolio.comingSoon">Em breve</div>
+                            </div>
+                            <div class="portfolio-card-screen portfolio-card-screen--soon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" viewBox="0 0 256 256"><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM84,184a12,12,0,1,1,12-12A12,12,0,0,1,84,184Zm44,0a12,12,0,1,1,12-12A12,12,0,0,1,128,184Zm0-40a12,12,0,1,1,12-12A12,12,0,0,1,128,144Zm44,40a12,12,0,1,1,12-12A12,12,0,0,1,172,184Zm0-40a12,12,0,1,1,12-12A12,12,0,0,1,172,144Zm36-64H48V48H72v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24Z"></path></svg>
+                                <span data-i18n="portfolio.comingSoon">Em breve</span>
+                            </div>
+                        </div>
+                        <footer class="portfolio-card-footer">
+                            <div class="portfolio-card-meta">
+                                <h3 class="portfolio-card-name" data-i18n="portfolio.comingSoon">Em breve</h3>
+                                <p class="portfolio-card-desc" data-i18n="portfolio.comingSoonDesc">Novo projeto em andamento</p>
+                            </div>
+                        </footer>
+                    </article>
+
+                </div>
+            </div>
+
+            <button class="portfolio-nav portfolio-next" aria-label="Próximo projeto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg>
+            </button>
+        </div>
+
+        <div class="portfolio-dots" aria-hidden="true">
+            <button class="portfolio-dot is-active"></button>
+            <button class="portfolio-dot"></button>
+        </div>
+
+        <div class="section-divider" aria-hidden="true"></div>
+    </section>

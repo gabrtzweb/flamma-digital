@@ -1,0 +1,78 @@
+---
+import { Image } from 'astro:assets';
+import solutionImage from '../assets/solution-image.png';
+---
+
+<section class="solution" id="solution">
+        <div class="solution-content">
+            <div class="solution-copy">
+                <span class="feature-badge solution-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M229.26,90.4a108,108,0,0,1-177.63,114A108,108,0,0,1,195.41,43.63l20.1-20.11a12,12,0,0,1,17,17l-96,96a12,12,0,1,1-17-17l24-24a36,36,0,1,0,19.76,39.65,12,12,0,0,1,23.53,4.74,60,60,0,1,1-25.73-62L178.3,60.74a84,84,0,1,0,28.46,38,12,12,0,1,1,22.5-8.35Z"></path></svg>
+                    <span data-i18n="solution.badge">Melhores soluções</span>
+                </span>
+
+                <h2 class="solution-title">
+                    <span data-i18n="solution.titleLine1">Porque escolher</span>
+                    <span class="solution-title-line2">
+                        <span data-i18n="solution.titleLine2">a Shopify</span>
+                    <svg class="solution-title-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50" aria-hidden="true"> <path d="M 22.839844 2.0351562 C 19.659152 1.9484924 16.325547 6.1910156 14.529297 12.720703 L 8.8847656 14.560547 C 8.5177656 14.680547 8.2511719 14.999812 8.2011719 15.382812 L 4.7558594 42.193359 C 4.6888594 42.718359 5.0415 43.204734 5.5625 43.302734 L 29.630859 47.882812 L 31.488281 7.1972656 L 30.376953 7.5585938 C 29.713953 5.1145938 28.473844 3.5775156 26.839844 3.2285156 C 26.344844 3.1205156 25.866344 3.1427656 25.402344 3.2597656 C 24.845344 2.6717656 24.203656 2.266375 23.472656 2.109375 C 23.262469 2.0645 23.05189 2.0409338 22.839844 2.0351562 z M 22.720703 4.0371094 C 22.835859 4.0344238 22.948953 4.0437813 23.056641 4.0664062 C 23.227641 4.1034062 23.392734 4.17925 23.552734 4.28125 C 21.567734 5.97825 20.050047 9.1985469 19.248047 11.185547 L 16.847656 11.966797 C 18.482656 6.9417969 20.993363 4.0773926 22.720703 4.0371094 z M 26.65625 5.2675781 C 27.42425 5.5845781 28.071563 6.6167344 28.476562 8.1777344 L 27.453125 8.5117188 C 27.293125 7.2737188 27.02925 6.1775781 26.65625 5.2675781 z M 24.755859 5.9179688 C 25.120859 6.7669688 25.386484 7.865625 25.521484 9.140625 L 21.791016 10.355469 C 22.804016 8.2054687 23.847859 6.7299688 24.755859 5.9179688 z M 33.482422 7.3964844 L 31.636719 47.806641 L 44.216797 45.023438 C 44.728797 44.910438 45.065234 44.421297 44.990234 43.904297 C 43.389234 32.807297 40.349922 11.701203 40.294922 11.283203 C 40.283922 11.183203 40.25875 11.085188 40.21875 10.992188 C 40.02275 10.542188 39.668313 10.219641 39.195312 10.056641 C 39.103313 10.025641 38.993484 10.007906 38.896484 10.003906 C 38.674484 9.9949062 36.702281 9.8413906 35.863281 9.7753906 C 35.177281 9.0743906 33.860578 7.7328281 33.517578 7.4238281 C 33.506578 7.4128281 33.493422 7.4064844 33.482422 7.3964844 z M 22.71875 18.023438 C 24.78275 18.023438 25.880734 18.672172 25.927734 18.701172 C 26.124734 18.820172 26.213578 19.06125 26.142578 19.28125 L 24.630859 23.941406 C 24.584859 24.083406 24.479797 24.196953 24.341797 24.251953 C 24.201797 24.309953 24.046016 24.298516 23.916016 24.228516 C 23.903016 24.221516 22.63025 23.539063 21.15625 23.539062 C 19.37325 23.539062 19.107422 24.451141 19.107422 24.994141 C 19.107422 25.583141 19.880344 26.166844 20.777344 26.839844 C 22.364344 28.031844 24.537109 29.663453 24.537109 32.939453 C 24.537109 37.043453 21.982219 39.912109 18.324219 39.912109 C 14.164219 39.912109 12.069422 37.320937 11.982422 37.210938 C 11.881422 37.083937 11.848531 36.913813 11.894531 36.757812 L 12.957031 33.185547 C 13.006031 33.022547 13.136781 32.894656 13.300781 32.847656 C 13.463781 32.803656 13.641531 32.840172 13.769531 32.951172 C 13.789531 32.969172 15.726719 34.662109 17.261719 34.662109 C 18.154719 34.662109 18.390625 33.946359 18.390625 33.568359 C 18.390625 32.588359 17.673625 31.991328 16.765625 31.236328 C 15.511625 30.194328 13.953125 28.897031 13.953125 26.082031 C 13.953125 22.201031 16.658609 18.025391 22.599609 18.025391 C 22.639609 18.025391 22.67875 18.023438 22.71875 18.023438 z"></path> </svg>
+                    </span>
+                </h2>
+                <p class="solution-text" data-i18n="solution.text">Recomendamos especialmente para quem não possui uma equipe muito grande para cuidar de todas as demandas ou o tempo necessário para gerenciar as diversas tarefas de uma loja virtual. Se você busca maior praticidade para seu time, um design exclusivo e a facilidade na gestão das vendas do seu e-commerce, a Shopify é uma ótima solução.</p>
+                <a href="https://wa.me/5531995270548?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20um%20site%20Shopify%20com%20a%20Flamma%20Digital." class="solution-link" target="_blank" rel="noopener noreferrer">
+                    <span data-i18n="solution.cta">Quero criar uma loja na Shopify</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>
+                </a>
+            </div>
+
+            <div class="solution-media">
+                <Image src={solutionImage} alt="Shopify para sua loja" data-i18n-attr="alt:solution.imageAlt" />
+            </div>
+        </div>
+
+        <div class="solution-highlights">
+            <div class="solution-highlights-grid">
+                <article class="solution-highlight-card">
+                    <div class="solution-highlight-head">
+                        <div class="solution-highlight-iconbox" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M240,192h-8V56a16,16,0,0,0-16-16H40A16,16,0,0,0,24,56V192H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM40,56H216V192H200V168a8,8,0,0,0-8-8H120a8,8,0,0,0-8,8v24H72V88H184v48a8,8,0,0,0,16,0V80a8,8,0,0,0-8-8H64a8,8,0,0,0-8,8V192H40ZM184,192H128V176h56Z"></path></svg>
+                        </div>
+                        <h3 class="solution-highlight-title" data-i18n="solution.highlights.card1.title">Facilidade e diversos recursos</h3>
+                    </div>
+                    <p class="solution-highlight-text" data-i18n="solution.highlights.card1.text">Interface fácil de usar, sem precisar de equipe técnica, e com diversos apps na Shopify App Store para personalizar sua loja como quiser.</p>
+                </article>
+
+                <article class="solution-highlight-card">
+                    <div class="solution-highlight-head">
+                        <div class="solution-highlight-iconbox" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M120,136V96a8,8,0,0,1,16,0v40a8,8,0,0,1-16,0Zm8,48a12,12,0,1,0-12-12A12,12,0,0,0,128,184ZM224,56v56c0,52.72-25.52,84.67-46.93,102.19-23.06,18.86-46,25.27-47,25.53a8,8,0,0,1-4.2,0c-1-.26-23.91-6.67-47-25.53C57.52,196.67,32,164.72,32,112V56A16,16,0,0,1,48,40H208A16,16,0,0,1,224,56Zm-16,0L48,56l0,56c0,37.3,13.82,67.51,41.07,89.81A128.25,128.25,0,0,0,128,223.62a129.3,129.3,0,0,0,39.41-22.2C194.34,179.16,208,149.07,208,112Z"></path></svg>
+                        </div>
+                        <h3 class="solution-highlight-title" data-i18n="solution.highlights.card2.title">Segurança e escalabilidade</h3>
+                    </div>
+                    <p class="solution-highlight-text" data-i18n="solution.highlights.card2.text">Segura e escalável: com SSL e PCI DSS, a Shopify protege dados e cresce com seu negócio, de startups a grandes empresas.</p>
+                </article>
+
+                <article class="solution-highlight-card">
+                    <div class="solution-highlight-head">
+                        <div class="solution-highlight-iconbox" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M232,96a7.89,7.89,0,0,0-.3-2.2L217.35,43.6A16.07,16.07,0,0,0,202,32H54A16.07,16.07,0,0,0,38.65,43.6L24.31,93.8A7.89,7.89,0,0,0,24,96h0v16a40,40,0,0,0,16,32v72a8,8,0,0,0,8,8H208a8,8,0,0,0,8-8V144a40,40,0,0,0,16-32V96ZM54,48H202l11.42,40H42.61Zm50,56h48v8a24,24,0,0,1-48,0Zm-16,0v8a24,24,0,0,1-35.12,21.26,7.88,7.88,0,0,0-1.82-1.06A24,24,0,0,1,40,112v-8ZM200,208H56V151.2a40.57,40.57,0,0,0,8,.8,40,40,0,0,0,32-16,40,40,0,0,0,64,0,40,40,0,0,0,32,16,40.57,40.57,0,0,0,8-.8Zm4.93-75.8a8.08,8.08,0,0,0-1.8,1.05A24,24,0,0,1,168,112v-8h48v8A24,24,0,0,1,204.93,132.2Z"></path></svg>
+                        </div>
+                        <h3 class="solution-highlight-title" data-i18n="solution.highlights.card3.title">Loja de aplicativos completa</h3>
+                    </div>
+                    <p class="solution-highlight-text" data-i18n="solution.highlights.card3.text">Conecte sua loja a redes sociais, canais de venda, marketing, e até plataformas de frete com facilidade. Tudo em um só lugar.</p>
+                </article>
+
+                <article class="solution-highlight-card">
+                    <div class="solution-highlight-head">
+                        <div class="solution-highlight-iconbox" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M232.07,186.76a80,80,0,0,0-62.5-114.17A80,80,0,1,0,23.93,138.76l-7.27,24.71a16,16,0,0,0,19.87,19.87l24.71-7.27a80.39,80.39,0,0,0,25.18,7.35,80,80,0,0,0,108.34,40.65l24.71,7.27a16,16,0,0,0,19.87-19.86ZM62,159.5a8.28,8.28,0,0,0-2.26.32L32,168l8.17-27.76a8,8,0,0,0-.63-6,64,64,0,1,1,26.26,26.26A8,8,0,0,0,62,159.5Zm153.79,28.73L224,216l-27.76-8.17a8,8,0,0,0-6,.63,64.05,64.05,0,0,1-85.87-24.88A79.93,79.93,0,0,0,174.7,89.71a64,64,0,0,1,41.75,92.48A8,8,0,0,0,215.82,188.23Z"></path></svg>
+                        </div>
+                        <h3 class="solution-highlight-title" data-i18n="solution.highlights.card4.title">Equipe de suporte 24/7</h3>
+                    </div>
+                    <p class="solution-highlight-text" data-i18n="solution.highlights.card4.text">Assistência contínua para manter sua loja online, com suporte de conta rápido e direto, sem filas, espera ou abertura de tickets.</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="section-divider" aria-hidden="true"></div>
+    </section>

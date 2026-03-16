@@ -1,0 +1,93 @@
+---
+import { Image } from 'astro:assets';
+import featureCard1 from '../assets/feature-card-1.png';
+import featureCard2 from '../assets/feature-card-2.png';
+import featureCard3 from '../assets/feature-card-3.png';
+---
+
+<section class="feature" id="feature">
+        <div class="feature-content">
+            <span class="feature-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M168,112a56,56,0,1,1-56-56A56,56,0,0,1,168,112Zm61.66,117.66a8,8,0,0,1-11.32,0l-50.06-50.07a88,88,0,1,1,11.32-11.31l50.06,50.06A8,8,0,0,1,229.66,229.66ZM112,184a72,72,0,1,0-72-72A72.08,72.08,0,0,0,112,184Z"></path></svg>
+                <span data-i18n="feature.badge">Recursos disponíveis</span>
+            </span>
+
+            <h2 class="feature-headline">
+                <span class="feature-headline-desktop">
+                    <span data-i18n="feature.headline1">Venda aqui, ali e em</span>
+                    <span class="feature-headline-nowrap">
+                        <span data-i18n="feature.headline2">qualquer lugar!</span>
+                        <svg class="feature-icon-sparkle" xmlns="http://www.w3.org/2000/svg" width="72" height="72" fill="currentColor" viewBox="0 0 256 256"><path d="M208,144a15.78,15.78,0,0,1-10.42,14.94L146,178l-19,51.62a15.92,15.92,0,0,1-29.88,0L78,178l-51.62-19a15.92,15.92,0,0,1,0-29.88L78,110l19-51.62a15.92,15.92,0,0,1,29.88,0L146,110l51.62,19A15.78,15.78,0,0,1,208,144ZM152,48h16V64a8,8,0,0,0,16,0V48h16a8,8,0,0,0,0-16H184V16a8,8,0,0,0-16,0V32H152a8,8,0,0,0,0,16Zm88,32h-8V72a8,8,0,0,0-16,0v8h-8a8,8,0,0,0,0,16h8v8a8,8,0,0,0,16,0V96h8a8,8,0,0,0,0-16Z"></path></svg>
+                    </span>
+                </span>
+                <span class="feature-headline-mobile">
+                    <span class="feature-headline-mobile-top">
+                        <span data-i18n="feature.mobileLine1">Venda em</span>
+                        <svg class="feature-icon-sparkle" xmlns="http://www.w3.org/2000/svg" width="72" height="72" fill="currentColor" viewBox="0 0 256 256"><path d="M208,144a15.78,15.78,0,0,1-10.42,14.94L146,178l-19,51.62a15.92,15.92,0,0,1-29.88,0L78,178l-51.62-19a15.92,15.92,0,0,1,0-29.88L78,110l19-51.62a15.92,15.92,0,0,1,29.88,0L146,110l51.62,19A15.78,15.78,0,0,1,208,144ZM152,48h16V64a8,8,0,0,0,16,0V48h16a8,8,0,0,0,0-16H184V16a8,8,0,0,0-16,0V32H152a8,8,0,0,0,0,16Zm88,32h-8V72a8,8,0,0,0-16,0v8h-8a8,8,0,0,0,0,16h8v8a8,8,0,0,0,16,0V96h8a8,8,0,0,0,0-16Z"></path></svg>
+                    </span>
+                    <span data-i18n="feature.mobileLine2">qualquer lugar!</span>
+                </span>
+            </h2>
+
+            <p class="feature-subtitle" data-i18n="feature.subtitle">
+                Alcance clientes em todos os lugares, vendendo online, em marketplaces, presencialmente, B2B e em qualquer dispositivo.
+            </p>
+
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <Image src={featureCard1} alt="Insights em tempo real" class="feature-card-image" data-i18n-attr="alt:feature.card1.imgAlt" />
+                    <div class="feature-card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1F67FF" viewBox="0 0 256 256"><path d="M128,24C74.17,24,32,48.6,32,80v96c0,31.4,42.17,56,96,56s96-24.6,96-56V80C224,48.6,181.83,24,128,24Zm80,104c0,9.62-7.88,19.43-21.61,26.92C170.93,163.35,150.19,168,128,168s-42.93-4.65-58.39-13.08C55.88,147.43,48,137.62,48,128V111.36c17.06,15,46.23,24.64,80,24.64s62.94-9.68,80-24.64Zm-21.61,74.92C170.93,211.35,150.19,216,128,216s-42.93-4.65-58.39-13.08C55.88,195.43,48,185.62,48,176V159.36c17.06,15,46.23,24.64,80,24.64s62.94-9.68,80-24.64V176C208,185.62,200.12,195.43,186.39,202.92Z"></path></svg>
+                        <h3 class="feature-card-title" data-i18n="feature.card1.title">Insights em tempo real</h3>
+                    </div>
+                    <p class="feature-card-text" data-i18n="feature.card1.text">Monitore suas campanhas em tempo real para garantir a máxima eficácia e identificar melhorias.</p>
+                </div>
+
+                <div class="feature-card">
+                    <Image src={featureCard2} alt="Dados realistas" class="feature-card-image" data-i18n-attr="alt:feature.card2.imgAlt" />
+                    <div class="feature-card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1F67FF" viewBox="0 0 256 256"><path d="M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1,0-16h8V136a8,8,0,0,1,8-8H72a8,8,0,0,1,8,8v64H96V88a8,8,0,0,1,8-8h32a8,8,0,0,1,8,8V200h16V40a8,8,0,0,1,8-8h40a8,8,0,0,1,8,8V200h8A8,8,0,0,1,232,208Z"></path></svg>
+                        <h3 class="feature-card-title" data-i18n="feature.card2.title">Dados realistas</h3>
+                    </div>
+                    <p class="feature-card-text" data-i18n="feature.card2.text">Aproveite a análise para aprimorar os fluxos de trabalho, aumentar o engajamento e tomar decisões.</p>
+                </div>
+
+                <div class="feature-card">
+                    <Image src={featureCard3} alt="Publique em vários canais" class="feature-card-image" data-i18n-attr="alt:feature.card3.imgAlt" />
+                    <div class="feature-card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1F67FF" viewBox="0 0 256 256"><path d="M237.66,77.66,203.31,112l26.35,26.34a8,8,0,0,1-11.32,11.32L212,143.31l-53,53a40,40,0,0,1-56.57,0L86.75,180.57,37.66,229.66a8,8,0,0,1-11.32-11.32l49.09-49.09L59.72,153.54a40,40,0,0,1,0-56.57l53-53-6.35-6.34a8,8,0,0,1,11.32-11.32L144,52.69l34.34-34.35a8,8,0,1,1,11.32,11.32L155.31,64,192,100.69l34.34-34.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+                        <h3 class="feature-card-title" data-i18n="feature.card3.title">Publique em vários canais</h3>
+                    </div>
+                    <p class="feature-card-text" data-i18n="feature.card3.text">Use a integração multicanal e apareça em todos os lugares em que os clientes navegam.</p>
+                </div>
+            </div>
+
+            <div class="feature-ticker" aria-label="Vantagens da plataforma">
+                <div class="feature-ticker-row feature-ticker-row--forward">
+                    <div class="feature-ticker-track">
+                        <span class="feature-adv-badge" data-i18n="feature.advantage1">Apps Essenciais</span>
+                        <span class="feature-adv-badge" data-i18n="feature.advantage2">Segurança de Dados</span>
+                        <span class="feature-adv-badge" data-i18n="feature.advantage3">Escalabilidade</span>
+                        <span class="feature-adv-badge" data-i18n="feature.advantage4">Integração de Pagamentos</span>
+                        <span class="feature-adv-badge" data-i18n="feature.advantage1">Apps Essenciais</span>
+                        <span class="feature-adv-badge" data-i18n="feature.advantage2">Segurança de Dados</span>
+                        <span class="feature-adv-badge" data-i18n="feature.advantage3">Escalabilidade</span>
+                        <span class="feature-adv-badge" data-i18n="feature.advantage4">Integração de Pagamentos</span>
+                    </div>
+                </div>
+
+                <div class="feature-ticker-row feature-ticker-row--reverse">
+                    <div class="feature-ticker-track">
+                        <span class="feature-adv-badge" data-i18n="feature.advantage5">Gestão Simplificada</span>
+                        <span class="feature-adv-badge" data-i18n="feature.advantage6">Integração com Marketing</span>
+                        <span class="feature-adv-badge" data-i18n="feature.advantage7">Mobile-Friendly</span>
+                        <span class="feature-adv-badge" data-i18n="feature.advantage8">SEO Otimizado</span>
+                        <span class="feature-adv-badge" data-i18n="feature.advantage5">Gestão Simplificada</span>
+                        <span class="feature-adv-badge" data-i18n="feature.advantage6">Integração com Marketing</span>
+                        <span class="feature-adv-badge" data-i18n="feature.advantage7">Mobile-Friendly</span>
+                        <span class="feature-adv-badge" data-i18n="feature.advantage8">SEO Otimizado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

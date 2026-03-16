@@ -132,7 +132,7 @@ small, .text-small {
     position: fixed;
     inset: 0;
     z-index: 5;
-    background: url(assets/noise.png) repeat;
+    background: url(/assets/noise.png) repeat;
     opacity: var(--noise-opacity);
     pointer-events: none;
 }
@@ -302,8 +302,8 @@ small, .text-small {
     height: 32px;
     width: 133px; /* SVG is 187.5:45 — at 32px tall → ~133px wide */
     background-color: currentColor;
-    -webkit-mask-image: url(assets/flamma-logo.svg);
-    mask-image: url(assets/flamma-logo.svg);
+    -webkit-mask-image: url(/assets/flamma-logo.svg);
+    mask-image: url(/assets/flamma-logo.svg);
     -webkit-mask-size: contain;
     mask-size: contain;
     -webkit-mask-repeat: no-repeat;
@@ -537,8 +537,8 @@ small, .text-small {
     height: 0.82em;
     width: 0.82em; /* flamma-icon.svg is square (810×810) */
     background-color: var(--primary);
-    -webkit-mask-image: url(assets/flamma-icon.svg);
-    mask-image: url(assets/flamma-icon.svg);
+    -webkit-mask-image: url(/assets/flamma-icon.svg);
+    mask-image: url(/assets/flamma-icon.svg);
     -webkit-mask-size: contain;
     mask-size: contain;
     -webkit-mask-repeat: no-repeat;
@@ -994,8 +994,8 @@ small, .text-small {
     height: 32px;
     width: 133px;
     background-color: currentColor;
-    -webkit-mask-image: url(assets/flamma-logo.svg);
-    mask-image: url(assets/flamma-logo.svg);
+    -webkit-mask-image: url(/assets/flamma-logo.svg);
+    mask-image: url(/assets/flamma-logo.svg);
     -webkit-mask-size: contain;
     mask-size: contain;
     -webkit-mask-repeat: no-repeat;

@@ -1,0 +1,26 @@
+---
+import { SOCIAL_LINKS } from "../data/site.js";
+---
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <div class="footer-top">
+      <a href="#hero" class="footer-logo" aria-label="Flamma Digital">
+        <span class="footer-logo-img"></span>
+      </a>
+
+      <div class="footer-social">
+        {SOCIAL_LINKS.map((link) => (
+          <a href={link.href} aria-label={link.label} class="footer-social-link" set:html={link.icon} />
+        ))}
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p data-i18n="footer.copyright">© 2025 Flamma Digital, todos os direitos reservados.</p>
+      <p data-i18n-html="footer.madeWith">Desenvolvido com <span class="footer-heart">💙</span></p>
+    </div>
+  </div>
+</footer>

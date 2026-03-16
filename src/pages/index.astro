@@ -1,0 +1,30 @@
+---
+import ptBR from "../data/locales/pt-BR.json";
+
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import Solution from "../components/Solution.astro";
+import Features from "../components/Features.astro";
+import CtaBanner from "../components/CtaBanner.astro";
+import Portfolio from "../components/Portfolio.astro";
+import Faq from "../components/Faq.astro";
+import Footer from "../components/Footer.astro";
+import ClientScripts from "../components/ClientScripts.astro";
+---
+
+<Layout lang="pt-BR" title={ptBR.meta.title} description={ptBR.meta.description}>
+  <Header />
+
+  <main>
+    <Hero />
+    <Solution />
+    <Features />
+    <CtaBanner />
+    <Portfolio />
+    <Faq />
+  </main>
+
+  <Footer />
+  <ClientScripts />
+</Layout>
