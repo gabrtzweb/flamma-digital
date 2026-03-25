@@ -1304,25 +1304,47 @@ small, .text-small {
 }
 
 .portfolio-card-screen--soon {
+    position: relative;
+    overflow: hidden;
+    height: 360px;
+    color: rgba(195, 211, 255, 0.95);
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.portfolio-card-screen--soon::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(10, 12, 18, 0.28) 0%, rgba(10, 12, 18, 0.6) 58%, rgba(10, 12, 18, 0.86) 100%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.portfolio-card-soon-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    background: linear-gradient(135deg, #0e1017 0%, #141824 100%);
-    height: 360px;
-    color: rgba(143, 218, 255, 0.25);
-    font-family: var(--font-heading);
-    font-size: 1.05rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    gap: 0.55rem;
+    text-align: center;
+    pointer-events: none;
 }
 
 .portfolio-card-screen--soon svg {
     color: var(--primary);
-    opacity: 0.3;
+    opacity: 0.95;
     fill: currentColor;
+}
+
+.portfolio-card-soon-overlay span {
+    color: rgba(195, 211, 255, 0.96);
 }
 
 .portfolio-card-footer {
